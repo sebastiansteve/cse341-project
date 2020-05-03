@@ -13,7 +13,7 @@
 </div>
 <div class="container">
     <div>
-        <form action="/book" method="GET">
+        <form action="/prove2/book" method="post">
             <label for="newTitle">Title</label><br>
             <input type="text" name="newTitle"><br>
             <label for="newSummary">Summary</label><br>
@@ -21,6 +21,20 @@
             <button type="submit">Add Book</button>
         </form>
     </div>
+</div>
+<div class="container">
+  <div>
+      <!-- Looped List for requirement 01-->
+      <h2>Title:</h2>
+      <% for(ti of titles) { %>
+        <h3><%= ti %></h3>
+      <% } %>
+      <h2>Summary:</h2>
+      <% for(summary of summaries) { %>
+        <h3><%= summary %></h3>
+      <% } %>
+      <!-- Looped List for requirement 01-->
+  </div>
 </div>
 </body>
 </html>
