@@ -13,13 +13,16 @@
 </div>
 <div class="container">
     <div>
-        <form action="/book" method="GET">
-            <label for="newTitle">Title</label><br>
-            <input type="text" name="newTitle"><br>
-            <label for="newSummary">Summary</label><br>
-            <input type="text" name="newSummary">
-            <button type="submit">Add Book</button>
-        </form>
+        <!-- Looped List for requirement 01-->
+        <h2>Title:</h2>
+        <% for(ti of titles) { %>
+          <h3><%= book %></h3>
+        <% } %>
+        <h2>Summary:</h2>
+        <% for(summary of summaries) { %>
+          <h3><%= summary %></h3>
+        <% } %>
+        <!-- Looped List for requirement 01-->
     </div>
 </div>
 </body>
