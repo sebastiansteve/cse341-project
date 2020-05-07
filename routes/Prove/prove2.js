@@ -15,7 +15,7 @@ router.get('/',(req, res, next) => {
     });
 });
 
-router.post('/book', (req, res, next) => {
+/* router.post('/book', (req, res, next) => {
     const newTitle = req.body.newTitle;
     const newSummary = req.body.newSummary;
 
@@ -24,9 +24,9 @@ router.post('/book', (req, res, next) => {
     summaryArray.push(newSummary);
 
     res.redirect('/prove2/');
-});
+}); */
 
-/* router.get('/book', (req, res, next) => {
+router.get('/book', (req, res, next) => {
     const newTitle = req.query.newTitle;
     const newSummary = req.query.newSummary;
 
@@ -41,6 +41,6 @@ router.post('/book', (req, res, next) => {
         activeTA03: true, // For HBS
         contentCSS: true, // For HBS
     });
-}); */
+}); 
 
 module.exports = router;
